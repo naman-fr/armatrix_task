@@ -3,8 +3,8 @@ import logging
 from fastapi import FastAPI, HTTPException, status, Query, Body
 from fastapi.middleware.cors import CORSMiddleware
 from typing import List, Optional
-from .models import TeamMember, TeamMemberCreate, TeamMemberUpdate
-from . import storage
+from models import TeamMember, TeamMemberCreate, TeamMemberUpdate
+import storage
 
 # Basic logging
 logging.basicConfig(level=logging.INFO)
@@ -16,7 +16,8 @@ app = FastAPI(
     version="1.1.0",
 )
 
-# allow origins from env or all for demo
+from fastapi.middleware.cors import CORSMiddleware
+
 origins = [
     "https://armatrix-task.vercel.app",
     "http://localhost:3000"
