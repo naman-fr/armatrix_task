@@ -17,16 +17,18 @@ app = FastAPI(
 )
 
 # allow origins from env or all for demo
-_allow_origins = os.getenv("ALLOW_ORIGINS", "*").split(",")
+origins = [
+    "https://armatrix-task.vercel.app",
+    "http://localhost:3000"
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=_allow_origins,
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 @app.get("/healthz", status_code=200)
 def healthz():
     return {"status": "ok"}
