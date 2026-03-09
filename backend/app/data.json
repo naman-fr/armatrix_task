@@ -1,0 +1,84 @@
+{
+  "next_id": 7,
+  "team": [
+    {
+      "id": 1,
+      "name": "Ava-Unit 7",
+      "role": "AI Systems Engineer",
+      "bio": "Designs perception stacks and neural control for autonomous agents.",
+      "photo_url": "https://robohash.org/ava-unit-7.png?set=set2",
+      "linkedin": "https://linkedin.com/in/ava-unit7",
+      "skills": [
+        "python",
+        "rl",
+        "ros"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Core-Delta",
+      "role": "Firmware Architect",
+      "bio": "Low-latency control loops and deterministic firmware for embedded platforms.",
+      "photo_url": "https://robohash.org/core-delta.png?set=set2",
+      "linkedin": "https://linkedin.com/in/core-delta",
+      "skills": [
+        "c++",
+        "rtos",
+        "spi"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "SYN-3",
+      "role": "Fullstack Engineer",
+      "bio": "Builds user experiences, dashboards, and deploy pipelines.",
+      "photo_url": "https://robohash.org/syn-3.png?set=set2",
+      "linkedin": "https://linkedin.com/in/syn-3",
+      "skills": [
+        "react",
+        "fastapi",
+        "docker"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Helix-Prime",
+      "role": "Hardware Systems",
+      "bio": "Works on sensor fusion and mechanical integration.",
+      "photo_url": "https://robohash.org/helix-prime.png?set=set2",
+      "linkedin": "https://linkedin.com/in/helix-prime",
+      "skills": [
+        "sensors",
+        "mech",
+        "cad"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "UX-Glint",
+      "role": "Design Engineer",
+      "bio": "Creates futuristic UI and micro-interactions for control panels.",
+      "photo_url": "https://robohash.org/ux-glint.png?set=set2",
+      "linkedin": "https://linkedin.com/in/ux-glint",
+      "skills": [
+        "figma",
+        "css",
+        "motion"
+      ]
+    },
+    {
+      "name": "testuser",
+      "role": "CP programmer",
+      "bio": "just leetcodes",
+      "photo_url": null,
+      "linkedin": null,
+      "skills": [
+        "c++",
+        "dsa"
+      ],
+      "id": 6,
+      "created_at": "2026-03-09T04:55:10.984693Z",
+      "updated_at": "2026-03-09T04:55:10.984693Z"
+    }
+  ]
+}
