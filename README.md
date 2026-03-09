@@ -1,9 +1,3 @@
-Below is the **proper `README.md` file content in Markdown format**.
-You can **copy it directly into `README.md`** and push to GitHub. It will render correctly on GitHub.
-
----
-
-```markdown
 # Armatrix Team Page — Full Stack Assignment
 
 ## Overview
@@ -25,23 +19,43 @@ The goal of this implementation is to demonstrate:
 # Architecture
 
 ```
-
-armatrix_task
+team-page-project
 │
 ├── backend
-│   ├── main.py
-│   ├── models.py
-│   ├── schemas.py
+│   ├── .venv
+│   ├── app
+│   │   ├── __pycache__
+│   │   ├── data.json
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   └── storage.py
+│   │
+│   ├── README.md
 │   └── requirements.txt
 │
 ├── frontend
 │   ├── components
+│   │   ├── Header.jsx
+│   │   ├── RobotAnimator.jsx
+│   │   ├── TeamCard.jsx
+│   │   ├── TeamForm.jsx
+│   │   └── TeamModal.jsx
+│   │
 │   ├── pages
+│   │   ├── _app.js
+│   │   ├── index.js
+│   │   └── team.js
+│   │
+│   ├── public
+│   │
 │   ├── styles
+│   │   └── globals.css
+│   │
+│   ├── node_modules
+│   ├── next.config.js
 │   └── package.json
 │
-└── README.md
-
+└── .gitignore
 ```
 
 ---
@@ -70,7 +84,6 @@ Responsibilities:
 ### Team Member Schema
 
 ```
-
 id
 name
 role
@@ -80,8 +93,7 @@ linkedin
 skills
 created_at
 updated_at
-
-````
+```
 
 Data is stored **in-memory** for simplicity.
 
@@ -108,18 +120,21 @@ UI design draws inspiration from the **Armatrix brand aesthetic** while maintain
 # Tech Stack
 
 ### Frontend
+
 - React
 - Next.js
 - CSS animations
 - SVG components
 
 ### Backend
+
 - Python
 - FastAPI
 - Pydantic
 - Uvicorn
 
 ### Deployment
+
 - Frontend → Vercel
 - Backend → Render
 
@@ -132,7 +147,7 @@ UI design draws inspiration from the **Armatrix brand aesthetic** while maintain
 ```bash
 git clone https://github.com/naman-fr/armatrix_task.git
 cd armatrix_task
-````
+```
 
 ---
 
@@ -150,9 +165,7 @@ Create virtual environment:
 python -m venv .venv
 ```
 
-Activate environment:
-
-Windows
+Activate environment (Windows):
 
 ```bash
 .venv\Scripts\activate
@@ -230,9 +243,9 @@ NEXT_PUBLIC_API_URL=http://localhost:8000
 
 # Deployment
 
-### Backend Deployment (Render)
+## Backend Deployment (Render)
 
-1. Go to [https://render.com](https://render.com)
+1. Go to https://render.com
 2. Create **New Web Service**
 3. Connect GitHub repository
 4. Configure:
@@ -257,9 +270,9 @@ https://your-backend-name.onrender.com/docs
 
 ---
 
-### Frontend Deployment (Vercel)
+## Frontend Deployment (Vercel)
 
-1. Go to [https://vercel.com](https://vercel.com)
+1. Go to https://vercel.com
 2. Import GitHub repository
 3. Set root directory:
 
@@ -299,10 +312,10 @@ RobotAnimator
 
 The interface uses:
 
-* futuristic gradients
-* animated cards
-* robotic UI elements
-* subtle hover interactions
+- futuristic gradients
+- animated cards
+- robotic UI elements
+- subtle hover interactions
 
 to reflect a robotics startup aesthetic.
 
@@ -312,12 +325,12 @@ to reflect a robotics startup aesthetic.
 
 If expanded further the system could include:
 
-* authentication
-* PostgreSQL database
-* image uploads
-* role-based admin panel
-* caching layer
-* server-side rendering optimizations
+- authentication
+- PostgreSQL database
+- image uploads
+- role-based admin panel
+- caching layer
+- server-side rendering optimizations
 
 ---
 
@@ -340,5 +353,3 @@ Backend
 # Author
 
 **Naman Gautam**
-
-```
