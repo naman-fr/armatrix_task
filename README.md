@@ -339,13 +339,13 @@ If expanded further the system could include:
 Frontend
 
 ```
-(Add after deployment)
+(https://armatrix-task.vercel.app)
 ```
 
 Backend
 
 ```
-(Add after deployment)
+(https://armatrix-task.onrender.com)
 ```
 
 ---
